@@ -242,7 +242,7 @@
   }
  
 const du = document.querySelector('.date-uploaded');
-du.textContent = (new Intl.DateTimeFormat('sk-SK', { dateStyle: 'medium', timeStyle: 'medium' })).format(du.dataset.timestamp);
+du.textContent = (new Intl.DateTimeFormat('sk-SK', { dateStyle: 'medium', timeStyle: 'medium' })).format(parseInt(du.dataset.timestamp, 10) * 1000);
 
 </script>
 
