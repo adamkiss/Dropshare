@@ -210,7 +210,7 @@
         <a href="__PATH__">__FILENAME__<span class="file-size"> · __FILESIZE__</span></a>
       </h1>
 
-      <div class="date-uploaded" data-time="__UNIXSHAREDATE__">
+      <div class="date-uploaded" data-timestamp="__UNIXSHAREDATE__">
          __SHAREDATE__
       </div>
    
@@ -240,6 +240,9 @@
     preview.className += ' fa fa-file-o';
     preview.innerHTML = '';
   }
+ 
+const du = document.querySelector('.date-uploaded');
+du.textContent = (new Intl.DateTimeFormat('sk-SK', { dateStyle: 'medium', timeStyle: 'medium' })).format(du.dataset.timestamp);
 
 </script>
 
