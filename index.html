@@ -137,6 +137,11 @@
       margin: 1em 0;
     }
 
+    .date-updated {
+        margin: -1.5rem 0 2rem;
+        opacity: .6;
+    }
+   
     .file-download {
       white-space: nowrap;
       font-size: 0.9rem;
@@ -205,8 +210,8 @@
         <a href="__PATH__">__FILENAME__<span class="file-size"> · __FILESIZE__</span></a>
       </h1>
 
-      <div class="date-uploaded">
-         Uploaded: __SHAREDATE__
+      <div class="date-uploaded" data-time="__UNIXSHAREDATE__">
+         __SHAREDATE__
       </div>
    
    
